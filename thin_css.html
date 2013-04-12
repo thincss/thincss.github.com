@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Thin CSS</title>
+    <link href="assets/styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/styles/bootstrap.css" rel="stylesheet">
+    <link href="assets/styles/bootstrap-responsive.css" rel="stylesheet">
+    <style type="text/css">
+    @media (max-width: 480px) {
+        
+        #file,#usused {
+          width: 250px;
+        }
+      }</style>
+  </head>
+  <body>
+    <div class="container">
+      <hr>
+      <div class="page-header">
+          <h1><a href="index.html" style="text-decoration:none;">Thin CSS<div id="beta">(beta)</div></a></h1>
+      </div>
+
+      <p style="text-align:justify">Usted puede utilizar cualquier compresor para minificar su archivo CSS, le recomendamos la herramienta: <a href="http://refresh-sf.com/yui/" target="_blank">http://refresh-sf.com/yui/</a>, la misma está basada en el compresor YUI.</p>
+      <br>
+      <form action="#output" class="form-horizontal">
+
+            <fieldset>
+              <div style="text-align:justify;">
+                <div class="span5 offset1">
+                  <p>Copie aquí el código css minificado:</p>
+                  <textarea rows="14" placeholder="PASO 1." id="file"></textarea>
+                </div>
+                <div class="span5">
+                  <p>Copie aquí las <a href="explicacion.html">reglas css no usadas</a>:</p>
+                  <textarea rows="14" placeholder="PASO 2." id="usused"></textarea>
+                </div>
+              </div>
+            </fieldset> 
+            <br>
+              <div class="well" style="text-align: center">
+                <a href="#output" id="continue" class="btn btn-primary">Continuar</a>
+            </div>
+      </form>
+    </hr>
+    </div>
+      <div class="container">
+      <section id="output" style="display:none;">
+            <br><br><br>
+            <h2>Código optimizado</h2>
+            <div class="row">
+                <div class="span8">
+                    <textarea id="result" rows="20" cols="80" class="span8" style="margin-bottom: 20px" readonly="readonly"></textarea>
+                </div>
+                      <div class="span4">
+                        <table class="table table-striped">
+                            <tbody>
+                              <tr>
+                                <td>Antes</td>
+                                <td id="antes"></td>
+                              </tr>
+                              <tr>
+                                <td>Después de la limpieza</td>
+                                <td id="after_clean"></td>
+                              </tr>
+                              <tr>
+                                <td>Radio de compresión</td>
+                                <td id="compression"></td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                        </table>
+                      </div>
+            </div>
+
+    </section>
+    <hr>
+
+    <div class="footer">
+        <p>&copy; Company 2013</p>
+      </div>
+    </div>
+    <!--Scripts -->
+    <script type="text/javascript" src="script/config.js"></script>
+    <script src="http://yui.yahooapis.com/3.7.3/build/yui/yui-min.js"></script>
+    <script type="text/javascript" src="script/app.js"></script>
+  </body>
+</html>
