@@ -1,0 +1,7 @@
+- Ver slogan del hero
+- Ver los textos de las cosas
+- Desaparece paso 1
+- Desaparece lo de codigo limpio en todos los pasos
+
+
+- Quitar los pasos

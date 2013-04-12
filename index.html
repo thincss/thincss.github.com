@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Thin CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/styles/bootstrap.css" rel="stylesheet">
+    <link href="assets/styles/style.css" rel="stylesheet">
+    <link href="assets/styles/bootstrap-responsive.css" rel="stylesheet">
+    <style type="text/css">
+    @media (max-width: 480px) {
+        
+        .jumbotron h1 {
+          font-size: 3em;
+        }
+        .lead {
+          font-size: 1.5em;
+        }
+      }</style>
+  </head>
+
+  <body>
+
+    <div class="container-narrow">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li id="inicio" class="active"><a id="inicioA" href="#">Inicio</a></li>
+          <li id="modalContacte"><a href="#">Contáctenos</a></li>
+          <li id="modalAcerca"><a href="#">Acerca</a></li>
+        </ul>
+        <h3 class="muted">
+          <a href="index.html" style="text-decoration:none;">Thin CSS<div id="beta00">(beta)</div></a>
+        </h3>
+      </div>
+
+      <hr>
+
+      <div class="jumbotron">
+        </br></br></br>
+        <h1>Reduce el peso de tu código,</h1>
+        <p class="lead">optimiza tus hojas de estilo.</p>
+        <br><br>
+        <center><a class="btn btn-large btn-success" href="thin_css.html">Continuar</a></center>
+        </br></br></br>
+      </div>
+      <div id="myModal">
+
+              <h3 id="myModalLabel">Acerca del proyecto</h3>
+              
+              <div>
+                <p style="text-align:justify;">Teniendo presente que a nivel mundial no todas las personas cuentan con gran ancho de banda y prestándole singular atención a lo considerable que resulta en este punto el estado en que se encuentre la caché del navegador, es que surge la idea de este proyecto.</p>
+                <p style="text-align:justify;">En la caché del navegador entre otros elementos se incluyen las hojas de estilo en cascada cargadas por cada página, por lo que lo mejor sería que estas tuvieran el menor tamaño posible. Actualmente existen muchos frameworks que facilitan el diseño de interfaces de usuario, pero los mismos luego de ayudarnos nos dejan con un problema, un pesado archivo CSS del que no siempre utilizamos todas sus reglas, tal es el caso del framework Twitter Bootstrap.</p> 
+                <p style="text-align:justify;">Enfocados en resolver esta problemática nos plantéamos el siguiente objetivo: <em>diseñar una aplicación 100% segura, óptima, gratuita y con un alto valor de compresión.</em></p>
+              </div>
+              
+            </div>
+              
+            <div id="myEmail">
+              <br><br>
+                <h3 id="myModalLabel">Contáctenos</h3>
+              
+              <div>
+                <p style="text-align:justify;">Con el objetivo de enviar sugerencias y opiniones sobre esta aplicación puede mantenerse en contacto con el equipo de desarrollo a través de estas direcciones de correo: <br>
+                  <address>
+                    <ul>
+                      <li><a href="mailto:dnvila@estudiantes.uci.cu" title="dnvila@estudiantes.uci.cu">dnvila@estudiantes.uci.cu</a><br></li>
+                      <li><a href="mailto:clmadrazo@estudiantes.uci.cu" title="clmadrazo@estudiantes.uci.cu">clmadrazo@estudiantes.uci.cu</a></li>
+                    </ul>
+                  </address>
+                </p>
+              </div>
+              <br><br>
+            </div>
+      <hr>
+      
+      <div class="footer">
+        <p>&copy; Company 2013</p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!--Scripts -->
+    <script src="http://yui.yahooapis.com/3.7.3/build/yui/yui-min.js"></script>
+    <script type="text/javascript" src="script/index.js"></script>
+
+  </body>
+</html>
